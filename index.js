@@ -16,7 +16,6 @@ document.addEventListener('click', function(e){
     } else if (e.target.matches('.modal-close-btn')){
         modal.style.display = "none";
     } else if (e.target.matches(".complete-btn")) {
-        console.log('click')
         modal.style.display = "block";
     } else if (e.target.matches(".modal-pay-btn")){
         console.log('click')
@@ -118,7 +117,6 @@ function updateTotalPrice() {
     totalPriceEl.textContent = `$${totalPrice.toFixed(2)}`;
 }
 
-
 function render() {
     foodItemsFeed.innerHTML = getFoodHtml();
     orderList.innerHTML = updateOrderList();
@@ -126,7 +124,3 @@ function render() {
 }
 
 render()
-
-
-
-  
