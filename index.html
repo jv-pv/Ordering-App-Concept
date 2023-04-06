@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Metadata -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering App</title>
+</head>
+<body>
+
+    <!-- Header -->
+
+    <div class="content-wrapper">
+        <header>
+            <div class="header-inner">
+                <h1>John's Dinner</h1>
+                <h2>The best burgers and pizzas in town.</h2>
+            </div>
+        </header>
+        <main>
+
+            <!-- Order Items -->
+
+            <section>
+                <div class="item-wrapper">
+                    <div id="food-item-feed">
+                        <!-- Feed -->
+                    </div>
+                </div>    
+            </section>
+
+                <!-- Order Details -->
+            <section>
+                <div class="order-details" id="order-details">
+                    <h3 class="order-title align-txt-center">Your Order</h3>
+                    <div class="order-content-wrapper">
+                        <ul class="order-list" id="order-list">
+                            <!-- Added food items -->
+                        </ul>
+                    </div>
+                    <span class="order-total">
+                        <h3>Total Price:</h3>
+                        <p class="align-right item-price">$</p>
+                    </span>
+                    <button type="submit" class="complete-btn">Complete Order</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div class="modal" id="modal">
+		<div class="close-modal-btn-container">
+			<button class="modal-close-btn" id="modal-close-btn">X</button>
+		</div>
+		<div class="modal-inner" id="modal-inner">
+			<h2>Enter card details</h2>
+            <div class="form-inputs-container">
+                <form id="card-payment-form">
+                    <input type="text" name="cardHolderName" placeholder="Enter your name" required/>
+                    <input type="number" name="cardNumber" placeholder="Enter card number" oninput="maxLengthCheck(this)" max="9999999999999999" required/>
+                    <input type="number" name="cardCVV" placeholder="Enter CVV" oninput="maxLengthCheck(this)" max="999" required/>                    <div class="modal-btn-container">
+                        <button type="submit" class="modal-pay-btn">Pay</button>
+                    </div>
+                </form>
+            </div>
+		</div>
+	</div>
+
+    <!-- JavaScript -->
+    
+    <script src="index.js" type="module"></script>
+
+</body>
+</html>
