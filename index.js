@@ -31,7 +31,7 @@ cardPaymentForm.addEventListener('submit', function(e){
     const confirmationDiv = document.createElement('div');
     confirmationDiv.innerHTML = `
     <div class="order-confirm-msg">
-        <h3> Thank you, ${customerName}! Your order is confirmed :)</h3>
+        <h3> Thank you, <span class="customer-name">${customerName}</span>! Your order is confirmed :)</h3>
     </div>
     `;
 

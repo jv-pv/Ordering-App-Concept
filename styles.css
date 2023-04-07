@@ -26,6 +26,7 @@ main {
     background-color: rgb(255, 255, 255);
     width: 600px;
     height: auto;
+    border-radius: 0 0 10px 10px;
     /* min-height: 994px; */
 }
 
@@ -40,10 +41,11 @@ header {
     height: 167px;
     background-image: url(./Images/header-image.png);
     background-size: cover;
+    border-radius: 10px 10px 0 0;
 }
 
 .header-inner h1 {
-    font-family: ABCDiatypeMonoEdu-Medium;
+    font-family: ABCDiatypeMonoEdu-Medium, Helvetica, sans-serif;
     margin: 0;
     padding: 47px 0 0 47px;
 }
@@ -198,9 +200,10 @@ header {
     font-size: 18px;
     font-weight: bold;
     width: 100%;
-    margin: 45px 0 0 0;
+    margin: 20px 0 10px 0;
     padding: 25px 0;
     border: none;
+    border-radius: 5px;
 }
 
 .complete-btn:hover {
@@ -283,24 +286,41 @@ input[type="number"]::-webkit-outer-spin-button {
     width: 100%;
     padding: 20px 0px;
     margin: 30px 0;
-    background-color: #13be85;
+    background-color: #16DB99;
     border-radius: 5px;
     color: white;
     font-size: 18px;
+    border: none;
+}
+
+.modal-pay-btn:hover {
+    background-color: #13be85;
 }
 
 /* Order Confirm Msg */
 
 .order-confirm-msg {
-    outline: solid black;
     text-align: center;
-    background-color: #13be85ea;
+    background-color: #16db99bc;
     color: rgb(43, 42, 42);
     margin: 0 0 10px 0;
     padding: 10px 0;
 }
 
+.customer-name {
+    color: rgb(232, 158, 112);
+}
 
+/* Button styles */
+
+button[type="submit"] {
+    box-shadow: 0 2px 5px rgb(0, 0, 0);
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: none;
+}
  
 
 
