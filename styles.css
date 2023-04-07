@@ -245,7 +245,6 @@ header {
 
 .modal-inner {
     width: 450px;
-    /* outline: solid orange; */
     margin: 0 auto;
     display: flex;
     flex-direction: column;
