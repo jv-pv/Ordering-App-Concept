@@ -288,6 +288,12 @@ input {
     border-radius: 5px;
 }
 
+input:focus {
+    border: solid #16DB99;
+    box-shadow: inset 0 0 5px #16DB99;
+    background: #ededed;
+}
+
 /* Remove arrows on number input */
 input[type="number"]::-webkit-inner-spin-button,
 input[type="number"]::-webkit-outer-spin-button {
