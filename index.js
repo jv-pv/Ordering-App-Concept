@@ -17,10 +17,22 @@ document.addEventListener('click', function(e){
         modal.style.display = "none";
     } else if (e.target.matches(".complete-btn")) {
         modal.style.display = "block";
-    } else if (e.target.matches(".modal-pay-btn")){
-        console.log('click')
-    }
+    } 
 })
+
+window.addEventListener('dblclick', closeModalFromOutsideClick);
+
+modal.addEventListener('dblclick', function(e) {
+    e.stopPropagation();
+})
+
+function closeModalFromOutsideClick(e) {
+    if (!e.target.id === "modal") {
+        return;
+    } else {
+        modal.style.display = "none";
+    }
+}
 
 cardPaymentForm.addEventListener('submit', function(e){
     e.preventDefault();
