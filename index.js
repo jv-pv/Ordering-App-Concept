@@ -27,7 +27,7 @@ modal.addEventListener('dblclick', function(e) {
 })
 
 function closeModalFromOutsideClick(e) {
-    if (!e.target.id === "modal") {
+    if (e.target.id === "modal") {
         return;
     } else {
         modal.style.display = "none";
