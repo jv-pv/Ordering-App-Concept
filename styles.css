@@ -17,7 +17,6 @@ body {
     font-family: ABCDiatypeMonoEdu-Regular, Helvetica, sans-serif;
     background-image: url(./Images/Dark\ -\ Blue\ 2.jpg);
     background-size: cover;
-    max-width: 100vw;
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -32,7 +31,6 @@ main {
 }
 
 .content-wrapper {
-    display: flex;
     width: 60%;
     max-width: 800px;
     min-width: 600px;
@@ -80,7 +78,7 @@ header {
 .item-wrapper {
     width: inherit;
     height: auto;
-    display: flex;
+    display: grid;
     justify-content: center;
 }
 
@@ -93,12 +91,14 @@ header {
     width: 508px;
     height: 140px;
     margin: 0 0 3.5em 0;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr;
     gap: 30px;
 }
 
 .emoji {
     font-size: 8rem;
+    align-self: center;
 }
 
 .food-data h3{

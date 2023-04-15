@@ -1,2 +1,2 @@
 # Ordering App Concept
- Practice project
+ Practice project creating an ordering app for a restaurant. 
